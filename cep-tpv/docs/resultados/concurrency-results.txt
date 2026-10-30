@@ -1,0 +1,5 @@
+PASS dos cobros simultáneos: solo uno vende la última pieza
+PASS inventario no negativo tras concurrencia
+PASS reintentos simultáneos devuelven una única venta
+PASS reintento simultáneo descuenta inventario una sola vez
+RESULT: 4 concurrency checks passed

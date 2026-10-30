@@ -1,0 +1,4 @@
+PASS suscriptor no accede al menú TPV
+PASS suscriptor rechazado en cep_buscar_producto
+PASS suscriptor rechazado en cep_procesar_venta
+RESULT: 3 permission checks passed

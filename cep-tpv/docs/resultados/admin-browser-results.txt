@@ -1,0 +1,7 @@
+PASS alta de producto desde formulario
+PASS producto tiene identificador
+PASS importación CSV real
+PASS importación conserva ID y cambia stock
+PASS reimpresión dentro de wp-admin
+PASS endpoint anónimo rechazado
+RESULT: 6 administrative browser checks passed

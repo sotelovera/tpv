@@ -1,0 +1,10 @@
+PASS migración a 8.2.0
+PASS ID SKU y stock conservados
+PASS saldo cliente conservado
+PASS venta original conservada
+PASS archivo histórico conservado
+PASS turno asignado al ID del usuario
+PASS segunda migración conserva filas
+PASS motor no transaccional bloqueado
+PASS motor restaurado
+RESULT: 9 migration checks passed

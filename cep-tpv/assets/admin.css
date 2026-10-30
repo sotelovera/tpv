@@ -1,0 +1,92 @@
+
+        /* Consolidación de estilos nativos de wp-admin: sin tarjetas, sin sombras, sin parches */
+        .cep-plugin-admin .wrap { margin-top: 10px; }
+        .cep-plugin-admin .wrap hr.wp-header-end { margin-bottom: 20px; }
+
+        /* Badges de estado discretos según paleta WordPress */
+        .cep-stock-ok { color: #008a20; font-weight: 600; }
+        .cep-stock-low { color: #d63638; font-weight: 600; }
+        .cep-low-stock-badge { display: inline-block; font-size: 11px; line-height: 1.4; padding: 1px 6px; border-radius: 2px; background: #fcf0f1; color: #d63638; border: 1px solid #f5c6cb; vertical-align: middle; }
+        .cep-badge-promo { display: inline-block; font-size: 11px; line-height: 1.4; padding: 1px 6px; border-radius: 2px; background: #f0f6fc; color: #135e96; border: 1px solid #c5d9ed; font-weight: 600; }
+        .cep-status-yes { color: #008a20; font-weight: 600; }
+        .cep-status-no { color: #646970; }
+
+        /* Buscador de inventario con autocompletado nativo */
+        .cep-autocomplete-wrap { position: relative; display: inline-block; vertical-align: top; }
+        .cep-search-suggestions { position: absolute; left: 0; right: 0; top: 100%; background: #fff; border: 1px solid #8c8f94; box-shadow: 0 3px 6px rgba(0,0,0,.15); z-index: 1000; max-height: 240px; overflow-y: auto; }
+        .cep-search-suggestions[hidden] { display: none; }
+        .cep-search-suggestion { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 8px 10px; border: 0; border-bottom: 1px solid #f0f0f1; background: #fff; text-align: left; cursor: pointer; }
+        .cep-search-suggestion:last-child { border-bottom: 0; }
+        .cep-search-suggestion:hover, .cep-search-suggestion:focus { background: #f0f6fc; outline: none; }
+        .cep-suggestion-main { min-width: 0; flex: 1; }
+        .cep-suggestion-name { display: block; font-weight: 600; color: #1d2327; }
+        .cep-suggestion-sku { display: block; font-size: 11px; color: #646970; font-family: monospace; }
+        .cep-suggestion-price { font-weight: 600; color: #1d2327; white-space: nowrap; margin-left: 10px; }
+
+        /* Estructura funcional del TPV (Pantalla de Ventas en Mostrador) */
+        .cep-tpv-workspace { background: #fff; border: 1px solid #c3c4c7; padding: 16px; margin-top: 10px; }
+        .cep-tpv-toolbar { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 14px; flex-wrap: wrap; }
+        .cep-tpv-search-box { position: relative; flex: 1; min-width: 280px; max-width: 600px; }
+        .cep-tpv-search-box > label { display: block; margin-bottom: 4px; font-weight: 600; }
+        .cep-tpv-search-row { position: relative; display: flex; align-items: center; }
+        .cep-tpv-search-row .dashicons { position: absolute; left: 8px; color: #646970; pointer-events: none; }
+        .cep-tpv-search-row input[type="text"] { width: 100%; padding-left: 32px; height: 34px; line-height: 1.4; }
+        .cep-tpv-toolbar-buttons { display: flex; gap: 8px; align-items: center; }
+        .cep-tpv-toolbar-buttons .button { height: 34px; line-height: 32px; }
+
+        /* Pestañas de tickets */
+        .cep-tpv-screen .nav-tab-wrapper { margin-bottom: 0; border-bottom: 1px solid #c3c4c7; }
+        .cep-tpv-screen .cep-ticket-tab { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; font-size: 13px; padding: 6px 12px; }
+        .cep-ticket-tab-close { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; margin-left: 4px; border-radius: 2px; font-size: 16px; line-height: 1; color: #646970; }
+        .cep-ticket-tab-close:hover { background: #dcdcde; color: #d63638; }
+
+        /* Sugerencias de búsqueda TPV */
+        .cep-tpv-suggestions-container { position: absolute; left: 0; right: 0; top: 100%; z-index: 1000; }
+        .cep-tpv-sugerencias { background: #fff; border: 1px solid #8c8f94; box-shadow: 0 4px 10px rgba(0,0,0,.15); max-height: 280px; overflow-y: auto; margin-top: 2px; }
+        .cep-tpv-sugerencia { display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 8px 12px; background: #fff; border: 0; border-bottom: 1px solid #f0f0f1; text-align: left; cursor: pointer; }
+        .cep-tpv-sugerencia:hover, .cep-tpv-sugerencia:focus { background: #f0f6fc; outline: none; }
+        .cep-tpv-sug-nombre strong { color: #1d2327; font-size: 13px; }
+        .cep-tpv-sug-nombre small { display: block; color: #646970; font-size: 11px; margin-top: 2px; }
+        .cep-tpv-sug-precio { font-weight: 600; color: #1d2327; font-size: 14px; margin-left: 12px; }
+
+        /* Paneles auxiliares TPV (Producto Común y Granel) */
+        .cep-tpv-popover { background: #f6f7f7; border: 1px solid #c3c4c7; padding: 14px; margin-bottom: 14px; }
+        .cep-tpv-popover-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; border-bottom: 1px solid #dcdcde; padding-bottom: 6px; }
+        .cep-tpv-popover-header strong { font-size: 14px; color: #1d2327; }
+
+        /* Lista de productos en el ticket */
+        .cep-ticket-table-container { border: 1px solid #c3c4c7; min-height: 240px; max-height: calc(100vh - 430px); overflow-y: auto; background: #fff; margin-bottom: 14px; }
+        .cep-ticket-table-container .wp-list-table { margin: 0; border: 0; }
+        .cep-ticket-table-container .wp-list-table th, .cep-ticket-table-container .wp-list-table td { vertical-align: middle; padding: 8px 10px; }
+        .cep-ticket-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 220px; color: #646970; text-align: center; }
+        .cep-ticket-empty .dashicons { font-size: 36px; width: 36px; height: 36px; margin-bottom: 8px; color: #8c8f94; }
+        .cep-cantidad-controles { display: inline-flex; align-items: center; gap: 6px; }
+        .cep-cantidad-controles .button { min-width: 26px; height: 26px; line-height: 24px; padding: 0 4px; text-align: center; }
+        .cep-btn-eliminar { color: #d63638; border-color: #d63638; min-width: 26px; height: 26px; line-height: 24px; padding: 0 4px; font-size: 16px; }
+        .cep-btn-eliminar:hover, .cep-btn-eliminar:focus { background: #d63638; color: #fff; border-color: #d63638; }
+
+        /* Panel de checkout y cobro */
+        .cep-tpv-checkout-panel { background: #f6f7f7; border: 1px solid #c3c4c7; padding: 14px; }
+        .cep-tpv-checkout-row { display: grid; grid-template-columns: 2fr 1.2fr 1fr 1fr 1.2fr; gap: 12px; align-items: end; }
+        .cep-tpv-checkout-item { display: flex; flex-direction: column; }
+        .cep-tpv-checkout-item > label { margin-bottom: 4px; font-size: 12px; font-weight: 600; color: #1d2327; }
+        .cep-tpv-checkout-item select, .cep-tpv-checkout-item input { width: 100%; height: 34px; }
+        .cep-tpv-metric-box { display: flex; align-items: center; height: 34px; padding: 0 10px; background: #fff; border: 1px solid #8c8f94; font-size: 15px; font-weight: 600; box-sizing: border-box; }
+        .cep-tpv-metric-box strong { font-size: 16px; }
+        .cep-tpv-total-box { font-size: 18px; color: #1d2327; }
+        .cep-tpv-change-box { color: #2271b1; }
+        .cep-tpv-checkout-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 14px; border-top: 1px solid #dcdcde; padding-top: 12px; }
+        .cep-tpv-checkout-actions .button-large { height: 38px; line-height: 36px; padding: 0 18px; font-size: 14px; }
+
+        @media (max-width: 960px) {
+            .cep-tpv-checkout-row { grid-template-columns: 1fr 1fr; }
+            .cep-tpv-checkout-item.cep-tpv-total-item { grid-column: span 2; }
+        }
+        @media (max-width: 640px) {
+            .cep-tpv-checkout-row { grid-template-columns: 1fr; }
+            .cep-tpv-checkout-item.cep-tpv-total-item { grid-column: auto; }
+            .cep-tpv-toolbar { flex-direction: column; align-items: stretch; }
+            .cep-tpv-search-box { max-width: none; }
+        }
+    /* Interfaz de operación integrada en wp-admin. */
+.cep-pos-layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:20px;margin-top:18px}.cep-panel{background:#fff;padding:24px;border:1px solid #dcdcde;border-radius:8px}.cep-panel h2{margin-top:0}.cep-checkout{align-self:start;position:sticky;top:50px}.cep-checkout label{display:block;font-weight:600;margin:18px 0 6px}.cep-checkout input,.cep-checkout select{width:100%;max-width:none;min-height:40px}.cep-checkout .button{display:block;width:100%;margin:12px 0}.cep-total{display:flex;justify-content:space-between;font-size:24px;padding:20px 0;border-top:1px solid #ddd}.cep-total strong{font-size:32px;color:#135e96}#cep-search{width:100%;height:48px;margin:10px 0;font-size:17px}#cep-results{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px;margin-bottom:24px}.cep-result{display:flex;flex-direction:column;gap:6px;align-items:flex-start;padding:15px;border:1px solid #c3c4c7;border-radius:6px;background:#f6f7f7;text-align:left;cursor:pointer}.cep-result:hover,.cep-result:focus{border-color:#2271b1;background:#f0f6fc}.cep-result span{font-size:18px;color:#135e96;font-weight:600}.cep-table-scroll{overflow-x:auto}#cep-cart input{width:85px}.cep-operation{padding:20px;background:white;border:1px solid #dcdcde;margin:16px 0}.cep-operation h2{margin-top:0}.cep-tpv-screen h1 small{font-size:15px;color:#646970}.cep-panel details{margin-top:20px}.cep-checkout [hidden]{display:none!important}@media(max-width:1100px){.cep-pos-layout{grid-template-columns:1fr}.cep-checkout{position:static}.cep-panel{padding:16px}}@media print{body *{visibility:hidden}#cep-receipt,#cep-receipt *{visibility:visible!important}#cep-receipt{display:block!important;position:absolute;top:0;left:0;background:white}.cep-printed-ticket{font:12px monospace;color:#000;overflow-wrap:anywhere}.cep-printed-ticket h2{font-size:16px;text-align:center}@page{margin:3mm}}

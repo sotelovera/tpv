@@ -1,0 +1,26 @@
+PASS pantalla cep-tpv
+PASS pantalla cep-inventario
+PASS pantalla cep-importar-excel
+PASS pantalla cep-proveedores
+PASS pantalla cep-clientes
+PASS pantalla cep-promociones
+PASS pantalla cep-caja
+PASS pantalla cep-perfiles
+PASS pantalla cep-reportes
+PASS pantalla cep-respaldos
+PASS pantalla cep-tpv-bascula
+PASS pantalla cep-config
+PASS pantalla cep-operaciones
+PASS búsqueda exacta y cotización con impuestos
+PASS texto de producto sin inyección
+PASS suspender ticket
+PASS recuperar ticket tras recarga
+PASS cobro desde interfaz
+PASS ticket usa total del servidor
+PASS ticket genera PDF de prueba
+PASS CSRF rechazado
+PASS operación sin identificador rechazada
+PASS respaldo incluye esquema y tablas nuevas
+PASS pantalla móvil sin desbordamiento
+PASS sin errores JavaScript
+RESULT: 25 browser checks passed

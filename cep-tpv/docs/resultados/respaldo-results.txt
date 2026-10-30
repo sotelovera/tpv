@@ -1,0 +1,1 @@
+PASS respaldo final restaurado: 16 tablas con checksum de datos coincidente

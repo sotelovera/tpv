@@ -1,0 +1,40 @@
+PASS apertura
+PASS doble apertura
+PASS impuesto decimal exacto
+PASS venta y cambio
+PASS reintento devuelve misma venta
+PASS reintento no duplica stock
+PASS clave reutilizada con otra carga
+PASS stock insuficiente
+PASS producto repetido evade stock
+PASS pieza fraccionaria
+PASS cantidad negativa
+PASS efectivo insuficiente servidor
+PASS pago mixto incompleto
+PASS fallos no dejan ventas parciales
+PASS granel por importe recalcula peso
+PASS mixto descuento e impuesto
+PASS crédito actualiza saldo
+PASS crédito sobre límite
+PASS reintegros parciales sin pérdida de centavos
+PASS no devolver más de lo vendido
+PASS devolución crédito reduce saldo
+PASS abono de crédito registrado
+PASS abono excesivo
+PASS recepción compra
+PASS salida sin stock
+PASS cierre cuadra
+PASS cierre conserva ventas
+PASS cierre conserva detalles
+PASS venta con caja cerrada
+PASS segundo cierre
+PASS rol cajero limitado
+PASS cajero no concede descuento
+PASS cajero no vende concepto libre
+PASS producto inactivo
+PASS rollback tras escritura real
+PASS rollback restaura stock
+PASS actualización repetible conserva datos
+PASS rechaza notación científica
+PASS rechaza exceso decimales
+RESULT: 39 checks passed
